@@ -77,33 +77,36 @@ a:hover {
   color: black;
 }
 
+
+@keyframes animation{
+
+  0%{
+    transform: translate(0);
+  }
+ 
+
+  50%{
+    transform: translate(8rem);
+  }
+
+
+  100%{
+    transform: translate(0rem);
+  }
+
+
+
+}
+
 .bank-name {
   font-size: 3.5rem;
   color: black;
   font-weight: bold;
   color: white;
   cursor: pointer;
+  animation-name: animation;
+  animation-duration: 5s;
 }
-
-/*       .top {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: white;
-    background-color: black;
-    padding: 0.5rem;
-  }
-  .top-flex {
-    display: flex;
-    gap: 1rem;
-    justify-items: center;
-    justify-content: center;
-  }
-
-  .icon-top {
-    width: 20px;
-    height: 20px;
-  } */
 
 
 
@@ -128,8 +131,10 @@ a:hover {
 .pseudo {
   position: relative;
   z-index: 1;
+ 
 
 }
+
 
 .pseudo::before {
   content: "";
@@ -276,13 +281,13 @@ tbody tr:nth-child(even):hover {
 
 tbody tr:nth-child(odd):hover {
   opacity: 0.8;
+
 }
 
 
 .news {
   background-color: #d5af95;
-  height: 100vh;
-  overflow: scroll;
+  
 }
 
 .news-media {
